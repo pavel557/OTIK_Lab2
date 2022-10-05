@@ -1,0 +1,14 @@
+H:\LearnMIET\otik\Lab2\Lab2\bin\Debug\netcoreapp3.1\Lab2.exe
+H:\LearnMIET\otik\Lab2\Lab2\bin\Debug\netcoreapp3.1\Lab2.deps.json
+H:\LearnMIET\otik\Lab2\Lab2\bin\Debug\netcoreapp3.1\Lab2.runtimeconfig.json
+H:\LearnMIET\otik\Lab2\Lab2\bin\Debug\netcoreapp3.1\Lab2.runtimeconfig.dev.json
+H:\LearnMIET\otik\Lab2\Lab2\bin\Debug\netcoreapp3.1\Lab2.dll
+H:\LearnMIET\otik\Lab2\Lab2\bin\Debug\netcoreapp3.1\Lab2.pdb
+H:\LearnMIET\otik\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.csproj.AssemblyReference.cache
+H:\LearnMIET\otik\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.GeneratedMSBuildEditorConfig.editorconfig
+H:\LearnMIET\otik\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.AssemblyInfoInputs.cache
+H:\LearnMIET\otik\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.AssemblyInfo.cs
+H:\LearnMIET\otik\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.csproj.CoreCompileInputs.cache
+H:\LearnMIET\otik\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.dll
+H:\LearnMIET\otik\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.pdb
+H:\LearnMIET\otik\Lab2\Lab2\obj\Debug\netcoreapp3.1\Lab2.genruntimeconfig.cache
