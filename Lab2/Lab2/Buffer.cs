@@ -1,23 +1,27 @@
 ﻿using System;
 using System.IO;
 using System.Text;
+using System.Collections.Generic;
 
 namespace Lab2
 {
     class Buffer
     {
-        public byte[] file;
+        public List<byte> file;
 
-        public void ReadFile(string path)
+        public void ReadFile(List<string> paths)
         {
-            using (FileStream fstream = File.OpenRead(path))
+            file = new List<byte>();
+            foreach (string path in paths)
             {
-                // выделяем массив для считывания данных из файла
-                file = new byte[fstream.Length];
-                // считываем данные
-
-                fstream.Read(file);
+                using (FileStream fstream = File.OpenRead(path))
+                {
+                    byte[] b = new byte[fstream.Length];
+                    fstream.Read(b);
+                    file.AddRange(b);
+                }
             }
+
         }
     }
 }

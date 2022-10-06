@@ -5,30 +5,30 @@ using System.Linq;
 
 namespace Lab2
 {
-    class Calculation
+    class CalculationUnicode
     {
         public int fileLength;
-        public SortedDictionary<byte, int> numberEachCharacter;
-        public SortedDictionary<byte, float> symbolProbability;
-        public SortedDictionary<byte, double> amountOfSymbolInformation;
+        public SortedDictionary<char, int> numberEachCharacter;
+        public SortedDictionary<char, float> symbolProbability;
+        public SortedDictionary<char, double> amountOfSymbolInformation;
         public double amountOfFileInformation;
 
-        public Calculation()
+        public CalculationUnicode()
         {
-            numberEachCharacter = new SortedDictionary<byte, int>();
-            symbolProbability = new SortedDictionary<byte, float>();
-            amountOfSymbolInformation = new SortedDictionary<byte, double>();
+            numberEachCharacter = new SortedDictionary<char, int>();
+            symbolProbability = new SortedDictionary<char, float>();
+            amountOfSymbolInformation = new SortedDictionary<char, double>();
             amountOfFileInformation = 0;
         }
 
-        public void CalculationFileLength(Buffer buffer)
+        public void CalculationFileLength(BufferUnicode buffer)
         {
-            fileLength = buffer.file.Count;
+            fileLength = buffer.file.Length;
         }
 
-        public void CalculationNumberEachCharacter(Buffer buffer)
+        public void CalculationNumberEachCharacter(BufferUnicode buffer)
         {
-            foreach (byte b in buffer.file)
+            foreach (char b in buffer.file)
             {
                 if (!numberEachCharacter.ContainsKey(b))
                 {
@@ -57,7 +57,7 @@ namespace Lab2
             }
         }
 
-        public void CalculationAmountOfFileInformation(Buffer buffer)
+        public void CalculationAmountOfFileInformation(BufferUnicode buffer)
         {
             foreach (var c in buffer.file)
             {
@@ -103,7 +103,7 @@ namespace Lab2
 
             foreach (var c in symbolProbability.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value))
             {
-                Console.WriteLine("Символ: " + (char)c.Key + " Код: " + c.Key + " Вероятность: " + c.Value);
+                Console.WriteLine("Символ: " + c.Key + " Вероятность: " + c.Value);
             }
 
             Console.WriteLine("Количество информации в символе");
